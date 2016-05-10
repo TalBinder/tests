@@ -12,6 +12,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/facebook', function(req, res) {
    res.sendFile('./public/facebookShare.html', {root: __dirname});
+    res.redirect('http://www.youtube.com');
 });
 
 var server = http.createServer(app);
