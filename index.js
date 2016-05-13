@@ -10,9 +10,15 @@ var path = require('path');
 var app = express();
 
 app.use(express.static(path.join(__dirname, '../public')));
-app.use('/facebook', function(req, res) {
+app.use('/MichalTest', function(req, res) {
    res.sendFile('./public/facebookShare.html', {root: __dirname});
-    res.redirect('http://www.ynet.co.il');
+});
+app.use('/script', function(req, res) {
+    res.sendFile('./public/test.js', {root: __dirname});
+})
+
+app.use(function(req, res) {
+   res.send('ops');
 });
 
 var server = http.createServer(app);
