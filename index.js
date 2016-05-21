@@ -13,6 +13,11 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/MichalTest', function(req, res) {
    res.sendFile('./public/facebookShare.html', {root: __dirname});
 });
+
+app.use('/fbtest', function(req, res) {
+    res.sendFile('./public/fbMessenger.html', {root: __dirname});
+});
+
 app.use('/script', function(req, res) {
     res.sendFile('./public/test.js', {root: __dirname});
 })
