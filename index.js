@@ -14,7 +14,7 @@ app.use('/MichalTest', function(req, res) {
    res.sendFile('./public/facebookShare.html', {root: __dirname});
 });
 
-app.use('/tal/fucking/binder', function(req, res) {
+app.use('/tal/fucking/binder/2', function(req, res) {
     res.sendFile('./public/fbMessenger.html', {root: __dirname});
 });
 
