@@ -14,7 +14,7 @@ app.use('/MichalTest', function(req, res) {
    res.sendFile('./public/facebookShare.html', {root: __dirname});
 });
 
-app.use('/fbtest', function(req, res) {
+app.use('/fbtest2', function(req, res) {
     res.sendFile('./public/fbMessenger.html', {root: __dirname});
 });
 
